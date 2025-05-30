@@ -1,0 +1,7 @@
+FileVersion = 1
+Dependencies = {corlib = "*", SDL3 = "*"}
+
+[Project]
+Name = "SDL3_mixer"
+TargetType = "BeefLib"
+StartupObject = "SDL3_mixer.Program"
