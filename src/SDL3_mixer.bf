@@ -25,7 +25,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern int32 Mix_Version(void);
+	[CLink] public static extern int32 Mix_Version();
 
 	/**
 	 * Initialization flags
@@ -132,7 +132,7 @@ static
 	 *
 	 * \sa Mix_Init
 	 */
-	[CLink] public static extern void Mix_Quit(void);
+	[CLink] public static extern void Mix_Quit();
 
 
 	/**
@@ -641,7 +641,7 @@ static
 	 * \sa Mix_GetChunkDecoder
 	 * \sa Mix_HasChunkDecoder
 	 */
-	[CLink] public static extern int32 Mix_GetNumChunkDecoders(void);
+	[CLink] public static extern int32 Mix_GetNumChunkDecoders();
 
 	/**
 	 * Get a chunk decoder's name.
@@ -708,7 +708,7 @@ static
 	 * \sa Mix_GetMusicDecoder
 	 * \sa Mix_HasMusicDecoder
 	 */
-	[CLink] public static extern int32 Mix_GetNumMusicDecoders(void);
+	[CLink] public static extern int32 Mix_GetNumMusicDecoders();
 
 	/**
 	 * Get a music decoder's name.
@@ -976,7 +976,7 @@ static
 	 */
 	[CLink] public static extern void Mix_HookMusic(Mix_MixCallback mix_func, void* arg);
 
-	public function void Mix_MusicFinishedCallback(void);
+	public function void Mix_MusicFinishedCallback();
 
 	/**
 	 * Set a callback that runs when a music object has stopped playing.
@@ -1009,7 +1009,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern void* Mix_GetMusicHookData(void);
+	[CLink] public static extern void* Mix_GetMusicHookData();
 
 	public function void Mix_ChannelFinishedCallback(int32 channel);
 
@@ -1885,7 +1885,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern void Mix_HaltMusic(void);
+	[CLink] public static extern void Mix_HaltMusic();
 
 	/**
 	 * Change the expiration delay for a particular channel.
@@ -2014,7 +2014,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern Mix_Fading Mix_FadingMusic(void);
+	[CLink] public static extern Mix_Fading Mix_FadingMusic();
 
 	/**
 	 * Query the fading status of a channel.
@@ -2155,7 +2155,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern void Mix_PauseMusic(void);
+	[CLink] public static extern void Mix_PauseMusic();
 
 	/**
 	 * Resume the music stream.
@@ -2165,7 +2165,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern void Mix_ResumeMusic(void);
+	[CLink] public static extern void Mix_ResumeMusic();
 
 	/**
 	 * Rewind the music stream.
@@ -2177,7 +2177,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern void Mix_RewindMusic(void);
+	[CLink] public static extern void Mix_RewindMusic();
 
 	/**
 	 * Query whether the music stream is paused.
@@ -2189,7 +2189,7 @@ static
 	 * \sa Mix_PauseMusic
 	 * \sa Mix_ResumeMusic
 	 */
-	[CLink] public static extern bool Mix_PausedMusic(void);
+	[CLink] public static extern bool Mix_PausedMusic();
 
 	/**
 	 * Jump to a given order in mod music.
@@ -2353,7 +2353,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern bool Mix_PlayingMusic(void);
+	[CLink] public static extern bool Mix_PlayingMusic();
 
 	/**
 	 * Set SoundFonts paths to use by supported MIDI backends.
@@ -2399,7 +2399,7 @@ static
 	 *
 	 * \since This function is available since SDL_mixer 3.0.0.
 	 */
-	[CLink] public static extern char8* Mix_GetSoundFonts(void);
+	[CLink] public static extern char8* Mix_GetSoundFonts();
 
 	public function bool Mix_EachSoundFontCallback(char8*, void*);
 
@@ -2462,7 +2462,7 @@ static
 	 *
 	 * \sa Mix_SetTimidityCfg
 	 */
-	[CLink] public static extern char8* Mix_GetTimidityCfg(void);
+	[CLink] public static extern char8* Mix_GetTimidityCfg();
 
 	/**
 	 * Get the Mix_Chunk currently associated with a mixer channel.
@@ -2515,5 +2515,5 @@ static
 	 *
 	 * \sa Mix_Quit
 	 */
-	[CLink] public static extern void Mix_CloseAudio(void);
+	[CLink] public static extern void Mix_CloseAudio();
 }
